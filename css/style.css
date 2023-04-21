@@ -95,13 +95,29 @@ header {
 
 /* Estilos para el logo */
 .logo {
-	flex: 1;
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #333;
+	width: 100px;
+	height: 100px;
+	transition: all 0.2s ease-in-out; /* efecto de transición suave */
+}
+
+.logo:hover {
+	transform: scale(1.1); /* escala el logo en un 10% */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* agrega una sombra */
 }
 
 .logo img {
 	display: block;
 	margin: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
+
+
 
 /* Estilos para el menú */
 nav {
