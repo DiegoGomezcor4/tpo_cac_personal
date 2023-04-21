@@ -1,0 +1,131 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los encabezados */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #333;
+    color: #FFF;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+}
+
+/* Estilos para la sección principal */
+section {
+    margin: 20px;
+}
+
+/* Estilos para los artículos */
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+
+/* Estilos para el aside */
+aside {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border: 1px solid #CCC;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para el logo en el header */
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* Modificar el ancho del logo según tu necesidad */
+}
+
+/* Estilos para el header */
+header {
+	display: flex;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+/* Estilos para el logo */
+.logo {
+	flex: 1;
+}
+
+.logo img {
+	display: block;
+	margin: 0;
+}
+
+/* Estilos para el menú */
+nav {
+	flex: 1;
+	text-align: right;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav ul li:first-child {
+	margin-left: 0;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
