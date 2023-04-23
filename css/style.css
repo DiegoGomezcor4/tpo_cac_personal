@@ -25,9 +25,9 @@ a {
     text-decoration: none;
 }
 
-/* a:hover {
+a:hover {
     text-decoration: underline;
-} */
+}
 
 /* Estilos para la navegación */
 nav {
@@ -84,14 +84,14 @@ header img {
     width: 200px; /* Modificar el ancho del logo según tu necesidad */
 }
 
-/* Estilos para el header
-header {
+/* Estilos para el header */
+/* header {
 	display: flex;
 	align-items: center;
 	background-color: #333;
 	color: #fff;
-	padding: 10px; 
-}*/
+	padding: 10px;
+} */
 
 /* Estilos para el logo */
 .logo {
@@ -191,9 +191,4 @@ nav ul li a {
 	background-color: #fff;
 	color: #333;
 }
-
-.seccion-principal {
-	margin-top: 150px;
-}
-
 
