@@ -181,3 +181,7 @@ header img {
 .seccion-principal {
 	margin-top: 15%;
 }
+
+img {
+	width: 500px;
+}
