@@ -132,9 +132,6 @@ header img {
 
 /* Estilos para el menú */
 
-
-
-
 .main-header {
 	position: fixed;
 	top: 0;
@@ -150,9 +147,10 @@ header img {
 
 .main-nav {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items:center;
+	justify-content:right;
 	flex-grow: 1;
+	margin-right: 5%;
 }
 
 .main-nav ul {
