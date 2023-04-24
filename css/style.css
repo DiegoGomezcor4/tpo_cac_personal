@@ -20,14 +20,14 @@ h3 {
 }
 
 /* Estilos para los enlaces */
-a {
+/* a {
     color: #0066CC;
     text-decoration: none;
-}
+} */
 
-a:hover {
+/* a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Estilos para la navegación */
 nav {
@@ -81,7 +81,7 @@ footer {
 header img {
     display: block;
     margin: 0 auto;
-    width: 200px; /* Modificar el ancho del logo según tu necesidad */
+    width: 250px; /* Modificar el ancho del logo según tu necesidad */
 }
 
 /* Estilos para el header */
@@ -99,8 +99,8 @@ header img {
 	border-radius: 50%;
 	overflow: hidden;
 	border: 2px solid #333;
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	transition: all 0.2s ease-in-out; /* efecto de transición suave */
 }
 
@@ -193,5 +193,5 @@ nav ul li a {
 }
 
 .seccion-principal {
-	margin-top: 150px;
+	margin-top: 15%;
 }
