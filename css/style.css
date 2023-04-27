@@ -19,19 +19,8 @@ h3 {
     font-size: 18px;
 }
 
-/* Estilos para los enlaces */
-/* a {
-    color: #0066CC;
-    text-decoration: none;
-} */
-
-/* a:hover {
-    text-decoration: underline;
-} */
-
-/* Estilos para la navegación */
 nav {
-    background-color: #333;
+    background-color: #a19e9e;
     color: #FFF;
 	flex: 1;
 	text-align: right;
@@ -56,9 +45,6 @@ nav ul li a {
 
 }
 
-nav ul li:first-child {
-	margin-left: 0;
-}
 
 
 /* Estilos para la sección principal */
@@ -95,14 +81,6 @@ header img {
     width: 250px; /* Modificar el ancho del logo según tu necesidad */
 }
 
-/* Estilos para el header */
-/* header {
-	display: flex;
-	align-items: center;
-	background-color: #333;
-	color: #fff;
-	padding: 10px;
-} */
 
 /* Estilos para el logo */
 .logo {
@@ -141,7 +119,7 @@ main {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #333;
+	background-color:  #a19e9e;
 	color: #fff;
 	padding: 10px;
 	z-index: 9999;
@@ -189,6 +167,49 @@ main {
 footer a img {
 	width: 50px;
 }
+
+/* estilos de iconos redes */
+
+.fa-brands {
+    font-size: 30px;
+    margin: 10px;
+    transition: all 0.2s ease-in-out; /* efecto de transición suave */
+    padding: 10px;
+    border-radius: 50%;
+    color: blueviolet;
+    
+}
+
+.fa-brands:hover {
+    
+    transform: scale(1.3); /* escala el logo en un 10% */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* agrega una sombra */
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-pinterest:hover {
+    color: #c8232c;
+}
+
+.fa-youtube:hover {
+    color: #c4302b;
+}
+
+.fa-instagram:hover {
+    color: #3f729b;
+}
+
+.fa-whatsapp:hover {
+    color: #25D366;
+}
+
 
 
 
