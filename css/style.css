@@ -132,6 +132,10 @@ header img {
 
 /* Estilos para el menú */
 
+main {
+	margin-top: 15%;
+}
+
 .main-header {
 	position: fixed;
 	top: 0;
