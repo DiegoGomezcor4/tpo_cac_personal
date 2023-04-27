@@ -84,6 +84,7 @@ header img {
 
 /* Estilos para el logo */
 .logo {
+	margin: 10px;
 	display: inline-block;
 	border-radius: 50%;
 	overflow: hidden;
@@ -94,7 +95,7 @@ header img {
 }
 
 .logo:hover {
-	transform: scale(1.1); /* escala el logo en un 10% */
+	transform: scale(1.1); /*escala el logo en un 10% */
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* agrega una sombra */
 }
 
@@ -182,8 +183,8 @@ footer a img {
 
 .fa-brands:hover {
     
-    transform: scale(1.3); /* escala el logo en un 10% */
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* agrega una sombra */
+    transform: scale(1.1); /* escala el logo en un 10% */
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* agrega una sombra */
 }
 
 .fa-twitter:hover {
