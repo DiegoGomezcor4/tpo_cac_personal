@@ -77,8 +77,8 @@ footer {
 /* Estilos para el logo en el header */
 header img {
     display: block;
-    margin: 0 auto;
-    width: 250px; /* Modificar el ancho del logo según tu necesidad */
+    /* margin: 0 auto; */
+    width: 200px; /* Modificar el ancho del logo según tu necesidad */
 }
 
 
