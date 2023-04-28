@@ -184,7 +184,7 @@ footer a img {
 .fa-brands:hover {
     
     transform: scale(1.1); /* escala el logo en un 10% */
-	box-shadow: 10px 10px 10px rgba(255, 253, 253, 0.5); /* agrega una sombra */
+	box-shadow: 0 0 10px rgba(255, 253, 253, 0.5); /* agrega una sombra */
 }
 
 .fa-twitter:hover {
