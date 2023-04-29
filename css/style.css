@@ -68,11 +68,12 @@ header img {
 }
 
 
-
 /* Estilos para el menú */
 
 main {
 	margin-top: 15%;
+	width: 100%;
+	padding: 20px;
 }
 
 .main-header {
@@ -80,7 +81,7 @@ main {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color:  #a19e9e;
+	background-color:  rgb(138, 84, 189);
 	color: #fff;
 	padding: 10px;
 	z-index: 9999;
@@ -95,7 +96,7 @@ main {
 	flex-grow: 1;
 	margin-right: 5%;
 	/* estilos del nav :*/
-	background-color: #a19e9e;
+	background-color: rgb(138, 84, 189);
     color: #FFF;
 	flex: 1;
 	text-align: right;
