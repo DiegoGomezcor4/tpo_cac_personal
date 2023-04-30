@@ -31,14 +31,14 @@ footer {
     background-color: #333;
     color: #FFF;
     text-align: center;
-    padding: 10px;
+
 }
 
 /* Estilos para el logo en el header */
 header img {
     display: block;
     /* margin: 0 auto; */
-    width: 200px; /* Modificar el ancho del logo según tu necesidad */
+    width: 180px; /* Modificar el ancho del logo según tu necesidad */
 }
 
 
@@ -49,8 +49,8 @@ header img {
 	border-radius: 50%;
 	overflow: hidden;
 	border: 2px solid #333;
-	width: 100px;
-	height: 100px;
+	width: 90px;
+	height: 90px;
 	transition: all 0.2s ease-in-out; /* efecto de transición suave */
 }
 
@@ -78,7 +78,6 @@ header img {
 	width: 100%;
 	background-color:  rgb(138, 84, 189);
 	color: #fff;
-	padding: 10px;
 	z-index: 9999;
 	display: flex;
 	align-items: center;
@@ -129,6 +128,9 @@ header img {
 	color: #fff;
 	text-decoration: none;
 }
+
+
+/* estilo del nav cuando el mouse para por encima   */
 
 .main-nav a:hover {
 	background-color: #fff;
