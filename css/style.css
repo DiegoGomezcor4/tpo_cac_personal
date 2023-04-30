@@ -73,6 +73,7 @@ header img {
 
 
 .main-header {
+	box-shadow: 0 5px 5px rgba(0,0,0,.3); /* Agrega una sombra con un desplazamiento horizontal de 0, un desplazamiento vertical de 2px, un radio de 4px y un color de sombra con una opacidad del 20% */
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -82,7 +83,9 @@ header img {
 	z-index: 9999;
 	display: flex;
 	align-items: center;
+	
 }
+
 
 .main-nav {
 	display: flex;
