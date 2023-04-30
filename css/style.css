@@ -190,12 +190,52 @@ footer a img {
     color: #25D366;
 }
 
+/* estilos del formulario */
+
 .bigicon {
     font-size: 35px;
-    color: #36A0FF;
+    color: #0d6efd;;
 }
 
-/* mensaje de prueba si sube a experimental*/
+.formulario {
+	width: 600px; /* ajusta el ancho según tus necesidades */
+	margin: 0 auto;
+	border: 2px solid violet;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Nuevos estilos para el main h2 p y iframe */
+
+main {
+	margin-top: 15%;
+	width: 10box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);0%;
+	padding: 20px;
+
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid violet;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+	font-size: 24px;
+	margin: 10px 0;
+  }
+  
+  p {
+	font-size: 18px;
+	margin: 5px 0;
+  }
+  
+  iframe {
+	margin: 20px 0;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+
+  
 
 
 
