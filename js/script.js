@@ -1,31 +1,43 @@
-const carouselSlide = document.querySelector(".carousel-slide");
-const carouselImages = document.querySelectorAll(".carousel-slide img");
-const carouselIndicators = document.querySelectorAll(".carousel-indicators span");
+function validateForm() {
+  // Obtenemos los valores ingresados por el usuario
+  var firstName = document.getElementById("fname").value;
+  var lastName = document.getElementById("lname").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var message = document.getElementById("message").value;
 
-let counter = 0;
-const size = carouselImages[0].clientWidth;
-
-carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
-
-carouselIndicators.forEach((indicator, index) => {
-  indicator.addEventListener("click", () => {
-    counter = index;
-    carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
-    carouselIndicators.forEach((indicator) => {
-      indicator.classList.remove("active");
-    });
-    indicator.classList.add("active");
-  });
-});
-
-setInterval(() => {
-  counter++;
-  if (counter >= carouselImages.length) {
-    counter = 0;
+  // Validamos que el campo de nombre no esté vacío
+  if (firstName == "") {
+    alert("Por favor ingrese su nombre");
+    return false;
   }
-  carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
-  carouselIndicators.forEach((indicator) => {
-    indicator.classList.remove("active");
-  });
-  carouselIndicators[counter].classList.add("active");
-}, 4000);
+
+  // Validamos que el campo de apellido no esté vacío
+  if (lastName == "") {
+    alert("Por favor ingrese su apellido");
+    return false;
+  }
+
+  // Validamos que el campo de correo electrónico tenga un formato válido
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Por favor ingrese una dirección de correo electrónico válida");
+    return false;
+  }
+
+  // Validamos que el campo de teléfono tenga al menos 7 dígitos
+  if (phone.length < 7) {
+    alert("Por favor ingrese un número de teléfono válido");
+    return false;
+  }
+
+  // Validamos que el campo de mensaje no esté vacío
+  if (message == "") {
+    alert("Por favor ingrese un mensaje");
+    return false;
+  }
+
+  // Si todos los campos son válidos, retornamos true para enviar el formulario
+  return true;
+}
+
