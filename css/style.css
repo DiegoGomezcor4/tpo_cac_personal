@@ -239,6 +239,7 @@ main {
     float:right;
 	height: 500px;
 	margin: 5px;
+	border-radius: 10px;
 }
 
 .nosotros p {
@@ -246,7 +247,7 @@ main {
 	float: left;
     margin-top: 0;
     margin-bottom: 1em;
-	text-align: center;
+	text-align: justify;
 }
 
 /* estilos de los botones */
