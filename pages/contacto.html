@@ -23,9 +23,9 @@
 		<nav class="main-nav">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-				<li><a href="destinos.html">Destinos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+				<li><a href="../pages/destinos.html">Destinos</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +33,7 @@
 	<h2>Contacto</h2>
     
 
-	<main>
+	<main class="main-contacto">
 		
 		
 		<!-- <h2>Formulario</h2>
@@ -59,9 +59,17 @@
 
 		
 		  <!-- formulario bootstrap: -->
+<div class="contacto-container">
 
-		  <div class="formulario">
-			<form action="show_data.html" target="_blank" onsubmit="return validateForm()">
+	<div class="datos-container">
+		<p>telefono</p>
+		<p>mail</p>
+
+
+	</div>
+
+	<div class="formulario">
+		<form action="show_data.html" target="_blank" onsubmit="return validateForm()">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -118,6 +126,9 @@
 		</form>
 	</div>
 
+</div>
+
+
 	<!-- Enlaces y mapas -->
 	
 	<h2>Sucursales:</h2>
@@ -141,8 +152,14 @@
 	</main>
 
 	<footer>
-		
-		
+
+		<!-- boton para subir -->
+		<div class="icon-container">
+			<a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+		</div>
+		  
+		 <!-- iconos redes  -->
+		<!-- <a href="#"><i class="fa-solid fa-chevron-up"></i></a> -->
 		<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
 		<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
 		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>

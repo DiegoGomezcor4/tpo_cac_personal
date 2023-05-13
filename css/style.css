@@ -8,9 +8,61 @@ body {
 
 
 /* Estilos para la sección principal */
-section {
-    margin: 20px;
+
+.portada img {
+    width: 100%;
+    height: 100%;
 }
+
+
+.seccion-index-contenido{
+	display:flex;
+    margin: 1rem;
+}
+
+.seccion-principal-titulo {
+	text-align: left;
+}
+
+.portada-destino img{
+    width: 100%;
+    height: 100%;
+}
+.seccion-principal-destino {
+	display:flex;
+    margin: 1rem;	
+}
+
+.seccion-index-contenido{
+	display:flex;
+	border-radius: 5px;
+}
+
+div img {
+   	max-width:100%;
+    align-items: center;
+	overflow: hidden;
+}
+	
+div h2 {
+	text-align: center;
+
+}
+
+.boton-destinos {
+	display: flex;
+	align-self:center;
+	padding:1rem;
+	margin-bottom:1rem;
+}
+
+.seccion-principal-titulo {
+	text-align: center;
+	font-style: italic;
+	text-align: justify;
+}
+
+
 
 /* Estilos para los artículos */
 article {
@@ -73,16 +125,18 @@ header img {
 
 
 .main-header {
+	
 	box-shadow: 0 5px 5px rgba(0,0,0,.3); /* Agrega una sombra con un desplazamiento horizontal de 0, un desplazamiento vertical de 2px, un radio de 4px y un color de sombra con una opacidad del 20% */
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 20%;
 	background-color:  rgb(138, 84, 189);
 	color: #fff;
 	z-index: 9999;
 	display: flex;
-	align-items: center;
+	align-items: center;	
 	
 }
 
@@ -135,9 +189,7 @@ header img {
 	color: #333;
 }
 
-.seccion-principal {
-	margin-top: 15%;
-}
+
 
 footer a img {
 	width: 50px;
@@ -154,6 +206,25 @@ footer a img {
     color: blueviolet;
     
 }
+
+.icon-container {
+	top: 10px;
+	padding: 20px;
+	position: relative;
+	font-size: 30px;
+  }
+  
+  .fa-chevron-up {
+	color: #0d6efd;
+	position: absolute;
+	top: 0;
+	transition: top 0.3s ease-out;
+  }
+  
+  .fa-chevron-up:hover {
+	top: -10px;
+  }
+  
 
 .fa-brands:hover {
     
@@ -189,28 +260,27 @@ footer a img {
 
 .bigicon {
     font-size: 35px;
-    color: #0d6efd;;
+    color: #0d6efd;
 }
 
 .formulario {
+	background-color:lightpink;
 	width: 600px; /* ajusta el ancho según tus necesidades */
 	margin: 0 auto;
-	border: 2px solid violet;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Nuevos estilos para el main h2 p y iframe */
 
 main {
-	margin-top: 5%;
-	width: 10;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-	padding: 20px;
+	
+	width: 100%;
+	/*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	padding: 20px;*/
 	display: flex;
 	flex-direction:column;
 	align-items:center;
 	justify-content: center;
-	border: 2px solid violet;
 }
   
   h2 {
@@ -265,13 +335,15 @@ main {
 .nosotros {
     overflow: hidden;
 	display: flex;
-	height: 500px;
+	width: 100%;
 }
 
-.nosotros img {
+.image-maleta {
     float:right;
 	margin: 5px;
-	border-radius: 20px;
+	object-fit: contain;
+	border-radius: 30px;
+	max-width: 50%;
 }
 
 .nosotros p {
@@ -280,6 +352,7 @@ main {
     margin-top: 0;
     margin-bottom: 1em;
 	text-align: justify;
+	
 }
 
 /* estilos de los botones */
@@ -308,6 +381,7 @@ main {
 	margin-top: 26px;
 	margin-bottom: 26px;
 	border-radius: 20px;
+	width: 90%;
 }
 .slide-inner {
 	position: relative;
@@ -421,3 +495,22 @@ li:nth-child(4) .slide-circulo{
 	margin-top: 20px;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* mas estilos de la pagina contacto */
+
+.contacto-container {
+	display: flex;
+}
+
+.datos-container {
+	width: 600px;
+}
+
+.formulario {
+	width: 600px;
+}
+
+.main-contacto {
+	background-color: papayawhip;
+}
+  
