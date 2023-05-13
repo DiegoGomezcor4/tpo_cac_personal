@@ -426,6 +426,39 @@ iframe {
 	width: 600px;
 }
 
-.main-contacto {
-	/* background-color: papayawhip; */
+/* .main-contacto {
+	background-color: papayawhip;
+} */
+
+/* media queries */
+
+.example {
+	padding: 20px;
+	color: black;
+}
+
+/* Extra small devices (600px and down ) */
+
+@media only screen and (max-width:600px) {
+	.example {
+		background-color: red;
+	}
+}
+
+@media (min-width: 600px) {
+	.example {
+		background-color: green;
+	}
+}
+
+@media (min-width: 768px) {
+	.example {
+		background-color: blue;
+	}
+}
+
+@media (min-width: 992px) {
+	.example {
+		background-color: orange;
+	}
 }
