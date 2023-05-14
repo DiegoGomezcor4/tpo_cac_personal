@@ -184,17 +184,13 @@ header img {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	/* estilos del nav: */
-	list-style: none;
-	margin: 0;
-	padding: 0;
+
 }
 
 .main-nav li {
 	margin-right: 10px;
 	border: 1px solid #fff;
 	border-radius: 5px;
-	/* estilos de nav ul li: */
 	display: inline-block;
 	margin-left: 20px;
 }
@@ -422,19 +418,22 @@ iframe {
     width: 100%;
     margin: 5% auto;
     padding: 50px;
+	flex-wrap: wrap;
 }
 
 .card-sucursal-item {
 	display: inline-block;
     text-align: center;
-    width: 25%;
-    margin: 0 1.5%;
-    padding: 30px 20px;
+    width: 22%;
+    margin: 1% 1.5%;
+    padding: 20px 20px;
     box-sizing: border-box;
-    border-color: #000000;
-    border-width: 2px;
-    border-style: solid;
     border-radius: 10px;
+	background-color: pink;
+	min-width: 200px;
+
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	transition: 0.2s all;
 }
 
 .card-sucursal-item img {
@@ -443,7 +442,9 @@ iframe {
 
 .card-sucursal-item:hover {
 	border-color: #1a73e8;
-	background-color: papayawhip;
+	box-shadow: 2px 2px 10px rgba(15, 98, 150, 0.5);
+	background-color: purple;
+	color: white;
 
 }
 
@@ -452,7 +453,7 @@ iframe {
 }
 
 .card-email {
-	font-size: 20px;
+	font-size: 1em;
     font-weight: bold;
     margin-top: 10px;
 }
@@ -460,6 +461,23 @@ iframe {
 .card-telefono {
 	font-size: 18px;
 }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    
+    background-color: #fff;
+    color: ##1a73e8;
+    
+  }
 
 
 
