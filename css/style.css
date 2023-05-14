@@ -83,7 +83,6 @@ header img {
 	background-color: rgb(138, 84, 189);
 	color: #fff;
 	z-index: 9999;
-	display: flex;
 	align-items: center;
 
 }
@@ -93,7 +92,7 @@ header img {
 	display: flex;
 	align-items: center;
 	justify-content: right;
-	flex-grow: 1;
+	/* flex-grow: 1; */
 	margin-right: 5%;
 	/* estilos del nav :*/
 	background-color: rgb(138, 84, 189);
@@ -367,7 +366,7 @@ footer a img {
 
 .formulario {
 	background-color: lightpink;
-	width: 600px;
+	width: 100%;
 	/* ajusta el ancho según tus necesidades */
 	margin: 0 auto;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
