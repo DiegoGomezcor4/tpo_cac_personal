@@ -414,21 +414,59 @@ iframe {
 /* mas estilos de la pagina contacto */
 
 
-.contacto-container {
+
+
+.cards-sucursales-container {
 	display: flex;
+	position: relative;
+    width: 100%;
+    margin: 5% auto;
+    padding: 50px;
 }
 
-/* .datos-container {
-	width: 600px;
-} */
+.card-sucursal-item {
+	display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.card-sucursal-item img {
+	border-radius: 10px;
+}
+
+.card-sucursal-item:hover {
+	border-color: #1a73e8;
+	background-color: papayawhip;
+
+}
+
+.card-sucursal-item:hover h2 {
+	font-size: 2.2rem;
+}
+
+.card-email {
+	font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-telefono {
+	font-size: 18px;
+}
+
+
 
 .formulario {
 	width: 600px;
 }
 
-/* .main-contacto {
-	background-color: papayawhip;
-} */
 
 /* media queries */
 
@@ -460,5 +498,11 @@ iframe {
 @media (min-width: 992px) {
 	.example {
 		background-color: orange;
+	}
+}
+
+@media (min-width: 1200px) {
+	.example {
+		background-color: pink;
 	}
 }
