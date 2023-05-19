@@ -48,3 +48,28 @@ function validateForm() {
   return true;
 }
 
+
+
+
+
+
+  // Función para cargar una imagen aleatoria de Unsplash
+function cargarImagenAleatoria() {
+  const accessKey = 'SFi0eufFuEWsmQReN2bXxvfCh99nT3wT8zQ6Xov7hYI'; //clave de API de Unsplash
+
+  fetch('https://api.unsplash.com/photos/random?client_id=' + accessKey + '&query=landscape')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      const imageUrl = data.urls.regular;
+      const imageElement = document.getElementById('random-image');
+      imageElement.src = imageUrl;
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+}
+
+// Llama a la función para cargar una imagen aleatoria cuando la página se cargue
+window.onload = cargarImagenAleatoria;
