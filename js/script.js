@@ -57,7 +57,7 @@ function validateForm() {
 function cargarImagenAleatoria() {
   const accessKey = 'SFi0eufFuEWsmQReN2bXxvfCh99nT3wT8zQ6Xov7hYI'; //clave de API de Unsplash
 
-  fetch('https://api.unsplash.com/photos/random?client_id=' + accessKey + '&query=landscape')
+  fetch('https://api.unsplash.com/photos/random?client_id=' + accessKey + '&query=landscape+Argentina')
     .then(function (response) {
       return response.json();
     })
@@ -75,3 +75,27 @@ function cargarImagenAleatoria() {
 
 // Llama a la función para cargar una imagen aleatoria cuando la página se cargue
 window.onload = cargarImagenAleatoria;
+
+
+//menu hamburguesa:
+
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.main-nav');
+
+menuToggle.addEventListener('click', function() {
+  if (window.innerWidth <= 768) {
+    menu.classList.toggle('active');
+    if (menu.classList.contains('active')) {
+      menu.style.maxHeight = menu.scrollHeight + 'px';
+    } else {
+      menu.style.maxHeight = 0;
+    }
+  }
+});
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 768) {
+    menu.classList.remove('active');
+    menu.style.maxHeight = 'none';
+  }
+});
