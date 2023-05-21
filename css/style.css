@@ -334,7 +334,6 @@ footer a img {
     display: flex;
     justify-content: center;
     align-items: center;
-	width: 2000px;
 	height: 550px;
 	/* width: 1800px; */ /* Establece el ancho deseado para el contenedor de la imagen */
 	/*height: 530px;  Establece la altura deseada para el contenedor de la imagen */
