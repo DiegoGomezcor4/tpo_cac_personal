@@ -65,7 +65,7 @@ function cargarImagenAleatoria() {
       const imageUrl = data.urls.regular;
       const imageElement = document.getElementById('random-image');
       imageElement.src = imageUrl;
-      imageElement.style.width = '1600px'; // Ajusta el ancho deseado
+      imageElement.style.width = '1800px'; // Ajusta el ancho deseado
       imageElement.style.height = '530px'; // Ajusta el alto deseado
     })
     .catch(function (error) {

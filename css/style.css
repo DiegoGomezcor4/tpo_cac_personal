@@ -70,7 +70,7 @@ header img {
 .logo:hover {
 	transform: scale(1.1);
 	/*escala el logo en un 10% */
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(235, 230, 230, 0.5);
 	/* agrega una sombra */
 }
 
@@ -120,20 +120,25 @@ header img {
 }
 
 .main-nav li {
-	margin-right: 10px;
+	margin-right: 0.5em;
 	border: 1px solid #fff;
-	border-radius: 5px;
+	border-radius: 0.5em;
 	display: inline-block;
-	margin: 20px;
+	margin: 1em;
 	flex-wrap: wrap;
+	background-color: #B799FF;
+	color: white;
+	transition: color 1s ease; /*Establece el tiempo de transición a 1 segundos*/
 
 }
 
 .main-nav a {
-	color: #fff;
 	text-decoration: none;
-	padding: 10px;
+	color: white;
+	padding: 0.5em;
 	display: block;
+	transition: color 1s ease;
+	border-radius: 0.5em;
 }
 
 /*menu hamburguesa */
@@ -157,9 +162,9 @@ header img {
 
 /* estilo del nav cuando el mouse para por encima   */
 
-.main-nav a:hover {
-	background-color: #fff;
-	color: #333;
+.main-nav li:hover, .main-nav a:hover {
+	background-color: white;
+	color: #B799FF;
 }
 
 
@@ -330,6 +335,10 @@ footer a img {
     display: flex;
     justify-content: center;
     align-items: center;
+	width: 1800px; /* Establece el ancho deseado para el contenedor de la imagen */
+	height: 530px; /* Establece la altura deseada para el contenedor de la imagen */
+	background-color: #f2f2f2; /* fondo de color para el contenedor */
+	
 
 }
 
