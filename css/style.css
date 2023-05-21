@@ -334,6 +334,8 @@ footer a img {
     display: flex;
     justify-content: center;
     align-items: center;
+	width: 2000px;
+	height: 550px;
 	/* width: 1800px; */ /* Establece el ancho deseado para el contenedor de la imagen */
 	/*height: 530px;  Establece la altura deseada para el contenedor de la imagen */
 	/* background-color: #837b7b; fondo de color para el contenedor */
@@ -479,7 +481,7 @@ iframe {
 }
 
 .map {
-	height: 200px;
+	height: 50%;
 	width: 40%;
 	padding: 10px;
 	min-width: 400px;
@@ -576,8 +578,6 @@ iframe {
 	.main-header {
 		font-size: 1.2rem;
 	}
-	
-
 }
 
 @media (max-width: 768px) {

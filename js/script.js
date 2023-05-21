@@ -50,12 +50,9 @@ function validateForm() {
 
 
 
-
-
-
 // Función para cargar una imagen aleatoria de Unsplash
 function cargarImagenAleatoria() {
-  const accessKey = 'SFi0eufFuEWsmQReN2bXxvfCh99nT3wT8zQ6Xov7hYI'; //clave de API de Unsplash
+  const accessKey = 'SFi0eufFuEWsmQReN2bXxvfCh99nT3wT8zQ6Xov7hYI'; // clave de API de Unsplash
 
   fetch('https://api.unsplash.com/photos/random?client_id=' + accessKey + '&query=landscape+Argentina')
     .then(function (response) {
@@ -75,6 +72,11 @@ function cargarImagenAleatoria() {
 
 // Llama a la función para cargar una imagen aleatoria cuando la página se cargue
 window.onload = cargarImagenAleatoria;
+
+// Cambiar la imagen cada 5 minutos (300,000 milisegundos)
+setInterval(cargarImagenAleatoria, 300000);
+
+
 
 
 //menu hamburguesa:
