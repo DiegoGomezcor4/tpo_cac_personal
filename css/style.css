@@ -370,7 +370,7 @@ container-api:click {
 .nosotros {
 	margin-bottom: 5vh;
 	margin: 4vh auto;
-	overflow:auto;
+	/* overflow:auto; */
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
