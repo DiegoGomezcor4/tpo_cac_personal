@@ -380,7 +380,7 @@ container-api:click {
 .image-maleta {
 	margin: 1vw;
 	border-radius: 2vw;
-	width: 50%;
+	width: 45%;
 	min-width: 400px;
 	max-width: 600px;
 	padding: 10px;
@@ -395,7 +395,7 @@ container-api:click {
 	margin-right: 4em;
 	margin-left: 4em;
 	text-align: justify;
-	width: 50%;
+	width: 45%;
 	min-width: 400px;
 	max-width: 600px;
 	padding: 10px;
