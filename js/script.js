@@ -64,6 +64,21 @@ function cargarImagenAleatoria() {
       imageElement.src = imageUrl;
       imageElement.style.width = '2000px'; // Ajusta el ancho deseado
       imageElement.style.height = '530px'; // Ajusta el alto deseado
+
+      const descriptionElement = document.getElementById('image-description');
+      descriptionElement.textContent = data.description || 'No hay descripción disponible';
+
+      let isSmall = false; // Variable de estado para verificar si la imagen está achicada
+
+      imageElement.addEventListener('click', function() {
+        if (isSmall) {
+          imageElement.style.height = '530px'; // Restaura el ancho original de la imagen
+          isSmall = false;
+        } else {
+          imageElement.style.height = '100%'; // Achica el ancho de la imagen al 100%
+          isSmall = true;
+        }
+      });
     })
     .catch(function (error) {
       console.log(error);
@@ -73,8 +88,15 @@ function cargarImagenAleatoria() {
 // Llama a la función para cargar una imagen aleatoria cuando la página se cargue
 window.onload = cargarImagenAleatoria;
 
-// Cambiar la imagen cada 5 minutos (300,000 milisegundos)
+// Cambiar la imagen y obtener información cada 5 minutos (300,000 milisegundos)
 setInterval(cargarImagenAleatoria, 300000);
+
+// Llama a la función para cargar una imagen aleatoria cuando la página se cargue
+window.onload = cargarImagenAleatoria;
+
+// Cambiar la imagen y obtener información cada 5 minutos (300,000 milisegundos)
+setInterval(cargarImagenAleatoria, 300000);
+
 
 
 
