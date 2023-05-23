@@ -359,9 +359,9 @@ container-api:click {
   }
 
 #random-image {
-	/* width: 100%; */
-    height: auto;
-    object-fit: cover;
+	width: 1800px;
+    height: 530px;
+    object-fit:none;
 	cursor: pointer;
 }
 

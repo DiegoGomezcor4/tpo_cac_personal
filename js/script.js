@@ -72,10 +72,10 @@ function cargarImagenAleatoria() {
 
       imageElement.addEventListener('click', function() {
         if (isSmall) {
-          imageElement.style.height = '530px'; // Restaura el ancho original de la imagen
+          imageElement.style.height = '530px'; // Restaura el alto original de la imagen
           isSmall = false;
         } else {
-          imageElement.style.height = '100%'; // Achica el ancho de la imagen al 100%
+          imageElement.style.height = '100%'; // Achica el alto de la imagen al 100%
           isSmall = true;
         }
       });
