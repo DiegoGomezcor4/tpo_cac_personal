@@ -333,7 +333,7 @@ footer a img {
 .container-api {
 	position: relative;
 	text-align: center;
-	width: 100%;
+	width: 1900px;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -345,9 +345,6 @@ footer a img {
 	/* background-color: #837b7b; fondo de color para el contenedor */
 }
 
-container-api:click {
-	height: auto;
-}
 
 .image-description {
 	position: relative;
@@ -361,7 +358,7 @@ container-api:click {
 #random-image {
 	width: 1800px;
     height: 530px;
-    object-fit:none;
+    object-fit:cover;
 	cursor: pointer;
 }
 
