@@ -70,7 +70,7 @@ header img {
 .logo:hover {
 	transform: scale(1.1);
 	/*escala el logo en un 10% */
-	box-shadow: 0 0 10px rgba(235, 230, 230, 0.5);
+	box-shadow: 0 0 20px rgba(235, 230, 230, 1);
 	/* agrega una sombra */
 }
 
