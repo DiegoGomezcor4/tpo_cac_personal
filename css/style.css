@@ -757,6 +757,7 @@ iframe {
 	}
 	.main-header {
 		height: 15em;
+		position: absolute;
 		
 	}
 	
