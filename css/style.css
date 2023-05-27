@@ -24,15 +24,6 @@ main {
 	margin: 0 auto	;
 }
 
-/*h2 {
-	font-size: 24px;
-	margin: 10px 0;
-}
-
-p {
-	font-size: 18px;
-	margin: 5px 0;
-}*/
 
 /*ESTILOS DEL HEADER */
 
@@ -754,7 +745,7 @@ iframe {
 	.main-header {
 		height: 17em;
 		position: absolute;
-	}
+	} 
 
 	.video {
 		width: 90%;
