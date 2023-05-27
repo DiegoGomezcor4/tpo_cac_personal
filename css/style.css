@@ -552,7 +552,7 @@ footer a img {
 
 .video {
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-	height: 85vh;
+	width: 70%;
 	margin: 20px;
 }
 
