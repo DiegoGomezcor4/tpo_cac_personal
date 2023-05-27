@@ -18,6 +18,20 @@ function validateForm() {
     return false;
   }
 
+  // Validamos que el campo de nombre no contenga números
+var nameRegex = /^[^\d]+$/;
+if (!nameRegex.test(firstName)) {
+  alert("El campo de nombre no debe contener números");
+  return false;
+}
+
+// Validamos que el campo de apellido no contenga números
+if (!nameRegex.test(lastName)) {
+  alert("El campo de apellido no debe contener números");
+  return false;
+}
+
+
   // Validamos que el campo de correo electrónico tenga un formato válido
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
