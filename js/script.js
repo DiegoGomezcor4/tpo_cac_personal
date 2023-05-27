@@ -63,8 +63,20 @@ function validateForm() {
     return false;
   }
 
+  // Esperar 2 segundos (2000 milisegundos)
+  setTimeout(borrarCampos, 2000);
+  
   // Si todos los campos son válidos, retornamos true para enviar el formulario
   return true;
+}
+
+function borrarCampos() {
+   // Borrar los valores de los campos
+   document.getElementById("fname").value = "";
+   document.getElementById("lname").value = "";
+   document.getElementById("email").value = "";
+   document.getElementById("phone").value = "";
+   document.getElementById("message").value = "";
 }
 
 
