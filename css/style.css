@@ -47,7 +47,7 @@ p {
 header img {
 	display: block;
 	/* margin: 0 auto; */
-	width: 180px;
+	width: 1800px;
 	/* Modificar el ancho del logo según tu necesidad */
 }
 
@@ -60,8 +60,8 @@ header img {
 	border-radius: 50%;
 	overflow: hidden;
 	border: 2px solid #333;
-	width: 90px;
-	height: 90px;
+	width: 100px;
+	height: 100px;
 	transition: all 0.2s ease-in-out;
 	/* efecto de transición suave */
 }
@@ -69,7 +69,7 @@ header img {
 .logo:hover {
 	transform: scale(1.1);
 	/*escala el logo en un 10% */
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 20px rgba(255, 255, 255, 1);
 	/* agrega una sombra */
 }
 
@@ -138,7 +138,9 @@ header img {
 	border: 1px solid #fff;
 	border-radius: 5px; 
 	/*flex-wrap: wrap;*/
-	
+	/* background-color: #B799FF;
+	color: white; */
+	transition: color 1s ease; /*Establece el tiempo de transición a 1 segundos*/
 
 }
 
@@ -147,28 +149,23 @@ header img {
 	text-decoration: none;
 	padding: 10px;
 	display: block;
-	
+	transition: color 1s ease;
 }
 
 .sub-menu-destinos li{
-
 	border: none;
 	border-radius: none;
-
-
 }
 
 .sub-menu-destinos {
-
 	border: 1px solid #fff;
 	border-radius: 5px;
 	display: inline-block;
 	text-align: left;
-	
 }
  
 .sub-menu-destinos li{
- border-bottom: 1px solid #fff;
+ 	border-bottom: 1px solid #fff;
 	border-radius: 5px;
 }
 
@@ -186,6 +183,23 @@ header img {
 	
 }	
 
+/*menu hamburguesa */
+
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	margin: 20px;
+  }
+  
+  .menu-toggle span {
+	display: block;
+	height: 3px;
+	background-color: #fff;
+  }
 
 
 /* estilo del nav cuando el mouse para por encima   */
@@ -453,6 +467,37 @@ footer a img {
 
 /* estilos de nosotros */
 
+.container-api {
+	position: relative;
+	text-align: center;
+	width: 1900px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 550px;
+	/* width: 1800px; */ /* Establece el ancho deseado para el contenedor de la imagen */
+	/*height: 530px;  Establece la altura deseada para el contenedor de la imagen */
+	/* background-color: #837b7b; fondo de color para el contenedor */
+}
+
+.image-description {
+	position: relative;
+	top: 10px;
+	background-color: #AEE2FF;
+	color: black;
+	padding: 10px;
+	font-size: 14px;
+  }
+
+  #random-image {
+	width: 1800px;
+    height: 530px;
+    object-fit:cover;
+	cursor: pointer;
+}
+
 .nosotros {
 	margin: 15vh;
 	overflow:auto;
@@ -463,9 +508,6 @@ footer a img {
 	align-items: center;
 }
 
-.nosotros p {
-	margin-top: 2rem;
-}
 
 .image-maleta {
 	margin: 1vw;
@@ -505,11 +547,6 @@ footer a img {
 }
 
 
-/* estilos del carrousel */
-
-
-
-
 
 /* estilos del video */
 
@@ -539,9 +576,32 @@ footer a img {
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+/*estilos de la tabla */
+
+table {
+    width: 60%; /* Ajusta el ancho deseado */
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse;
+    border: 2px solid #ccc; /* Agrega un borde a la tabla */
+  }
+
+  th, td, tr {
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #B799FF;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #ACBCFF;
+  }
+
+
+
 /* Nuevos estilos para el main h2 p y iframe */
-
-
 
 iframe {
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -560,7 +620,7 @@ iframe {
 }
 
 .map {
-	height: 200px;
+	height: 50%;
 	width: 40%;
 	padding: 10px;
 	min-width: 400px;
@@ -575,10 +635,10 @@ iframe {
 	display: flex;
 	position: relative;
     width: 100%;
-    margin: 15vh;
     padding: 20px;
 	flex-wrap: wrap;
 }
+
 
 .card-sucursal-item {
 	display: inline-block;
@@ -604,7 +664,7 @@ iframe {
 .card-sucursal-item:hover {
 	border-color: #1a73e8;
 	box-shadow: 2px 2px 10px rgba(15, 98, 150, 0.5);
-	background-color: purple;
+	background-color: #B799FF;
 	color: white;
 
 }
@@ -643,10 +703,6 @@ iframe {
 
 /* media queries */
 
-.example {
-	padding: 20px;
-	color: black;
-}
 
 /* Extra small devices (600px and down ) */
 
@@ -659,7 +715,10 @@ iframe {
 	.main-header {
 		font-size: 1rem;
 	}
-	
+
+	.video {
+		width: 90%;
+	}
 
 }
 
@@ -669,22 +728,55 @@ iframe {
 		font-size: 1.2rem;
 	}
 
+	.video {
+		width:  80%;
+	}
 }
+
+@media (max-width: 768px) {
+	
+	.main-nav {
+	  flex-direction: column;
+	  display: none;
+	}
+	
+	.main-nav.active {
+	  display: flex;
+	}
+	
+	.menu-toggle {
+	  display: flex;
+	}
+	
+	.main-nav ul {
+	  flex-direction: column;
+	}
+	
+	.main-nav li {
+	  padding: 5px 10px;
+	}
+  }
+
 
 
 @media only screen and (min-width: 992px) {
 	
 	.main-header {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
+
 	
 }
 
 @media only screen and (min-width: 1200px) {
 	
 	.main-header {
-		font-size: 1.7rem;
+		font-size: 1.2rem;
 	}
+
 	
 	
 }
+
+
+
