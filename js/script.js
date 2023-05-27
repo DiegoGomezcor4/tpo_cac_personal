@@ -12,24 +12,25 @@ function validateForm() {
     return false;
   }
 
+  // Validamos que el campo de nombre no contenga números
+  var nameRegex = /^[^\d]+$/;
+  if (!nameRegex.test(firstName)) {
+    alert("El campo de nombre no debe contener números");
+    return false;
+  }
+
   // Validamos que el campo de apellido no esté vacío
   if (lastName == "") {
     alert("Por favor ingrese su apellido");
     return false;
   }
 
-  // Validamos que el campo de nombre no contenga números
-var nameRegex = /^[^\d]+$/;
-if (!nameRegex.test(firstName)) {
-  alert("El campo de nombre no debe contener números");
-  return false;
-}
 
-// Validamos que el campo de apellido no contenga números
-if (!nameRegex.test(lastName)) {
-  alert("El campo de apellido no debe contener números");
-  return false;
-}
+  // Validamos que el campo de apellido no contenga números
+  if (!nameRegex.test(lastName)) {
+    alert("El campo de apellido no debe contener números");
+    return false;
+  }
 
 
   // Validamos que el campo de correo electrónico tenga un formato válido
@@ -84,7 +85,7 @@ function cargarImagenAleatoria() {
 
       let isSmall = false; // Variable de estado para verificar si la imagen está achicada
 
-      imageElement.addEventListener('click', function() {
+      imageElement.addEventListener('click', function () {
         if (isSmall) {
           imageElement.style.height = '530px'; // Restaura el alto original de la imagen
           isSmall = false;
@@ -121,7 +122,7 @@ const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.main-nav');
 const logo = document.querySelector('.logo'); // Agregar esta línea
 
-menuToggle.addEventListener('click', function() {
+menuToggle.addEventListener('click', function () {
   if (window.innerWidth <= 768) {
     menu.classList.toggle('active');
     if (menu.classList.contains('active')) {
@@ -134,7 +135,7 @@ menuToggle.addEventListener('click', function() {
   }
 });
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   if (window.innerWidth > 768) {
     menu.classList.remove('active');
     menu.style.maxHeight = 'none';
