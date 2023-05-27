@@ -659,6 +659,7 @@ iframe {
 
 .card-sucursal-item img {
 	border-radius: 10px;
+	width: 100%;
 }
 
 .card-sucursal-item:hover {
