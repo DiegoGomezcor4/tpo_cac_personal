@@ -68,6 +68,16 @@ function validateForm() {
 }
 
 
+document.getElementById("miFormulario").addEventListener("submit", function(event) {
+  // Evitar el envío del formulario
+  event.preventDefault();
+
+  // Restablecer los valores de los campos a vacío
+  document.getElementById("miFormulario").reset();
+});
+
+
+
 
 
 // Función para cargar una imagen aleatoria de Unsplash
