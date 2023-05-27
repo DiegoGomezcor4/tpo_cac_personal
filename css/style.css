@@ -754,6 +754,10 @@ iframe {
 		height: 17em;
 		position: absolute;
 	}
+
+	.video {
+		width: 90%;
+	}
 	
   }
 
