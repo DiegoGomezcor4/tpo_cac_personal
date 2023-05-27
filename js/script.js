@@ -25,13 +25,11 @@ function validateForm() {
     return false;
   }
 
-
   // Validamos que el campo de apellido no contenga números
   if (!nameRegex.test(lastName)) {
     alert("El campo de apellido no debe contener números");
     return false;
   }
-
 
   // Validamos que el campo de correo electrónico tenga un formato válido
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -40,7 +38,7 @@ function validateForm() {
     return false;
   }
 
-  //validamos que en el campo telefono se ingresen solo valores numericos
+  // Validamos que en el campo teléfono se ingresen solo valores numéricos
   var phoneRegex = /^[0-9]+$/;
   if (!phoneRegex.test(phone)) {
     alert("Por favor ingrese solo números en el campo de teléfono.");
@@ -59,9 +57,16 @@ function validateForm() {
     return false;
   }
 
+  // Validamos que el campo de mensaje no tenga más de 200 caracteres
+  if (message.length > 200) {
+    alert("El campo de mensaje no debe tener más de 200 caracteres");
+    return false;
+  }
+
   // Si todos los campos son válidos, retornamos true para enviar el formulario
   return true;
 }
+
 
 
 
