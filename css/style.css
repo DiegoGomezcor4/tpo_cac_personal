@@ -738,6 +738,7 @@ iframe {
 	.main-nav {
 	  flex-direction: column;
 	  display: none;
+	  top: 0.5em;
 	}
 	
 	.main-nav.active {
