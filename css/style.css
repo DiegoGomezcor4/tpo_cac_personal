@@ -69,8 +69,8 @@ header img {
 	margin: 0;
 	width: 100%;
 	object-fit: cover;
-	 max-width: 100%;
-	 height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 
@@ -85,11 +85,11 @@ header img {
 	flex-wrap: wrap;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
 	/* Agrega una sombra con un desplazamiento horizontal de 0, un desplazamiento vertical de 2px, un radio de 4px y un color de sombra con una opacidad del 20% */
-	position: sticky;
-	top: -2.5em;
-	left: 0;
+	position: fixed;
+	/* top: -2.5em;
+	left: 0; */
 	width: 100%;
-	height: 10em;
+	height: auto;
 	background-color: rgb(138, 84, 189);
 	color: #fff;
 	z-index: 9999;
@@ -193,7 +193,7 @@ header img {
   }
 
 
-/* estilo del nav cuando el mouse para por encima   */
+/* estilo del nav cuando el mouse pasa por encima   */
 
 .main-nav a:hover {
 	background-color: #fff;
@@ -202,13 +202,10 @@ header img {
 }
 
 
-
-
 /* Estilos para la sección principal */
 
 .portada img {
 	width: 100%;
-	height: 100%;
 }
 
 
@@ -257,6 +254,8 @@ header img {
     
 }
 
+/* Estilos para la seccion destinos */
+
 .seccion-principal-titulo h1 {
 	margin-top: 2rem;
 	text-align: center;
@@ -287,7 +286,6 @@ header img {
 
 .portada-destino img {
 	width: 100%;
-	height: 100%;
 }
 
 .seccion-principal-destino {
@@ -303,9 +301,8 @@ header img {
 
 .seccion-principal-destino article {
 
-	border: none;
-	
-	
+	border: none;	
+
 }
 
 .seccion-principal-destino div {
@@ -366,12 +363,6 @@ article {
 	border: 1px solid #CCC;
 }
 
-/* Estilos para el aside */
-aside {
-	background-color: #F2F2F2;
-	padding: 20px;
-	border: 1px solid #CCC;
-}
 
 /* Estilos para el pie de página */
 footer {
@@ -434,7 +425,7 @@ footer a img {
 }
 
 .fa-facebook:hover {
-	color: #3b5998;
+	color: #2f5dc2;
 }
 
 .fa-pinterest:hover {
@@ -446,13 +437,12 @@ footer a img {
 }
 
 .fa-instagram:hover {
-	color: #3f729b;
+	color: #a16c1d;
 }
 
 .fa-whatsapp:hover {
 	color: #25D366;
 }
-
 
 
 
@@ -725,6 +715,38 @@ iframe {
 	.main-header {
 		font-size: 1rem;
 	}
+	
+	.seccion-index-titulo h1 {
+		font-size: 1.5rem;
+	}
+
+	.seccion-index-contenido h2{
+		font-size: 1rem;
+	}
+
+	.seccion-index-contenido article {
+		width: 90%;
+	}
+
+	.seccion-principal-titulo h1{
+		margin-top: 8rem;
+		font-size: 1.2rem;
+
+	}
+
+	.seccion-principal-titulo h2{
+		font-size: 1rem;
+
+	}
+	.seccion-principal-titulo p {
+		font-size: 0.8rem;
+
+	}
+
+	.descripcion-paquete p{
+		font-size: 0.8rem;
+
+	}
 
 
 }
@@ -735,6 +757,7 @@ iframe {
 		font-size: 1.2rem;
 	}
 }
+
 
 @media (max-width: 768px) {
 	
@@ -762,7 +785,7 @@ iframe {
 	}
 	.main-header {
 		height: 18em;
-		position: absolute;
+		position: relative;
 	} 
 
 	.video {
@@ -776,7 +799,7 @@ iframe {
 @media only screen and (min-width: 992px) {
 	
 	.main-header {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	
@@ -785,7 +808,7 @@ iframe {
 @media only screen and (min-width: 1200px) {
 	
 	.main-header {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 	
 }
